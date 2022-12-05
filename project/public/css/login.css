@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+body {
+  background: url("https://rajaneditz.com/wp-content/uploads/2022/05/Polar-cb-editing-background-1-818x1024.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-family: "Poppins";
+}
+h1 {
+  font-size: 3em;
+  color: black;
+  font-weight: 100;
+  letter-spacing: 0px;
+}
+
+.err {
+  padding: 0.35em 0 1.2em 0;
+  color: red;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  row-gap: 1em;
+  margin: auto;
+  padding: 2em;
+  width: auto;
+  height: fit-content;
+  background-color: #c9c9c9;
+  height: 35.25em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  color: black;
+  width: 30em;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.8em 1.75em;
+  background-color: rgba(255, 255, 2550, 0.3);
+  border: 1px solid gray;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  text-decoration: none;
+  background-color: rgba(255, 255, 2550, 0.3);
+}
+button:nth-child(2) {
+  background: none;
+  color: black;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  position: absolute;
+  font-size: 0.8em;
+  padding: 0.3em 0 0 0.7em;
+  color: rgba(255, 255, 2550, 0.3);
+  margin-left: 0.5em;
+}
+input:focus {
+  border: 0px solid gray;
+}
+input:focus ~ label,
+input:valid ~ label {
+  color: black;
+  padding: 0 0.5em;
+  transform: translateX(10px) translateY(-10px);
+  background-color: rgba(255, 255, 2550, 0.3);
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+  border-left: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 2550, 0.3);
+  font-size: 1.4em;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 25em;
+  }
+}
